@@ -7,3 +7,6 @@ struct Book {
 // Write your code below: 📚
 var myFavBook = Book()
 
+// Write your code below: 📚
+print (myFavBook.pages)
+
