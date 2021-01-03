@@ -9,7 +9,6 @@ struct Band {
     self.isActive = isActive
   }
   
-  // Add your method below 🤘
   func pumpUpCrowd() -> String {
     if self.isActive {
       return "Are you ready to ROCK?"
@@ -18,16 +17,18 @@ struct Band {
     }
   }
   
+  // Add your mutating method below 🔧
+  mutating func changeGenre(newGenre: String) -> String {
+    self.genre = newGenre
+    return self.genre
+  } 
+  
 }
 
-// Create your instance below 🎸 🥁 
-var fooFighters = Band(genre: "rock", members: 6, isActive: true)
+var journey = Band(genre: "jazz", members: 5, isActive: true)
 
-print(fooFighters.pumpUpCrowd())
-print(fooFighters)
+// Change the genre below 🎸 🔨
+var bandsNewGenre: String = journey.changeGenre(newGenre: "rock")
 
-var manowar = Band(genre: "Heavy Metal", members: 5, isActive: false)
-
-print(manowar.pumpUpCrowd())
-print(manowar)
+print(bandsNewGenre)
 
