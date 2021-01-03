@@ -1,7 +1,7 @@
 // Write your code below: 📚
 struct Book {
   var title = ""
-  var pages = 0
+  var pages = 640
 }
 
 // Write your code below: 📚
