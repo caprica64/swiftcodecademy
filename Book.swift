@@ -1,18 +1,13 @@
 struct Book {
-  var pages = 0
-  var title = ""
+  var title: String
+  var pages: Int
+
+  // Add your code below 📚
+init (title: String, pages: Int) {
+  self.title = title
+  self.pages = pages
+ }
 }
 
-var myFavBook = Book()
-
-// Write your code below: 📚
-print(myFavBook.pages)
-
-myFavBook.pages = 640
-
-print(myFavBook.pages)
-
-myFavBook.title = "The Count of Monte Cristo"
-
-print(myFavBook.title)
+var theHobbit = Book(title: "The Hobbit", pages: 300)
 
