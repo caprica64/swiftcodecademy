@@ -17,7 +17,6 @@ struct Band {
     }
   }
   
-  // Add your mutating method below 🔧
   mutating func changeGenre(newGenre: String) -> String {
     self.genre = newGenre
     return self.genre
@@ -25,10 +24,10 @@ struct Band {
   
 }
 
-var journey = Band(genre: "jazz", members: 5, isActive: true)
+var journey = Band(genre: "rock", members: 5, isActive: true)
 
-// Change the genre below 🎸 🔨
-var bandsNewGenre: String = journey.changeGenre(newGenre: "rock")
+// Add your code below 📻 
+print(type(of: journey))
 
-print(bandsNewGenre)
+var bts: Band = Band(genre: "kpop", members: 7, isActive: true)
 
